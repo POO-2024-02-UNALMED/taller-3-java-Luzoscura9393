@@ -9,11 +9,11 @@ public class TV {
 	Control control;
 	static int numTv;
 	
-	public TV(Marca marca, boolean estado ){//constructor marca, volumen 
+	public TV(Marca marca, boolean estado ){
 		this.marca = marca;
 		this.estado = estado;
 	}
-	// metodos set y get de los atributos
+	
 	public void setMarca(Marca marca){
 		this.marca = marca;
 	}
@@ -49,7 +49,7 @@ public class TV {
     public Control getControl() {
     	return control;
     }
-    //contar
+    
        	
     public TV() {
     	numTv++;   	
@@ -58,7 +58,7 @@ public class TV {
     	return numTv;
     }
     
-    //apagado y encendido
+    
     
     public void turnOn() {
     	this.estado = true;
@@ -68,12 +68,12 @@ public class TV {
     	this.estado = false;
     	
     }
-    //retornar valor del atributo estado
+    
     public boolean getEstado() {
     	return estado;
     }
     
-    //metodos canalUp y canalDown
+    
     
     public void canalUp () {
     	if(estado == true) {
@@ -91,7 +91,7 @@ public class TV {
     	}
     	
     }
-    //metodos volumenUp, y volumenDown
+    
     
     public void volumenUp () {
     	if(estado == true) {
